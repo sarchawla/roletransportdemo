@@ -1,0 +1,42 @@
+{
+    "xsappname": "RoleTransportDemo",
+    "tenant-mode": "dedicated",
+    "scopes":[
+        {
+            "name": "$XSAPPNAME.Display",
+            "description": "Display"
+        },
+        {
+            "name": "$XSAPPNAME.Update",
+            "description": "Update"
+        }
+    ],
+    "attributes":[],
+    "role-templates":[
+        {
+            "name": "Viewer",
+            "description": "View-Users",
+            "scope-references": [
+                "$XSAPPNAME.Display"
+            ]
+        },
+        {
+            "name": "Manager",
+            "description": "Maintain Users",
+            "scope-references":[
+                "$XSAPPNAME.Display",
+                "$XSAPPNAME.Update"
+            ]
+        }
+    ],
+    "role-collections":[
+        {
+            "name": "UserManagementDemoRC",
+            "description": "User Manager Demoo Role Collection",
+            "role-template-references":[
+                "$XSAPPNAME.Viewer",
+                "$XSAPPNAME.Manager"
+            ]
+        }
+    ]
+}
