@@ -14,15 +14,15 @@
     "attributes":[],
     "role-templates":[
         {
-            "name": "Viewer",
-            "description": "View-Users",
+            "name": Auditlog_Auditor
+            "description": "Z",
             "scope-references": [
                 "$XSAPPNAME.Display"
             ]
         },
         {
-            "name": "Manager",
-            "description": "Maintain Users",
+            "name": Launchpad_Admin
+            "description": "Launchpad Admin",
             "scope-references":[
                 "$XSAPPNAME.Display",
                 "$XSAPPNAME.Update"
