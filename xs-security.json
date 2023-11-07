@@ -1,41 +1,13 @@
 {
-    "xsappname": "RoleTransportDemo",
-    "tenant-mode": "dedicated",
-    "scopes":[
-        {
-            "name": "$XSAPPNAME.Display",
-            "description": "Display"
-        },
-        {
-            "name": "$XSAPPNAME.Update",
-            "description": "Update"
-        }
-    ],
-    "attributes":[],
-    "role-templates":[
-        {
-            "name": Auditlog_Auditor
-            "description": "Z",
-            "scope-references": [
-                "$XSAPPNAME.Display"
-            ]
-        },
-        {
-            "name": Launchpad_Admin
-            "description": "Launchpad Admin",
-            "scope-references":[
-                "$XSAPPNAME.Display",
-                "$XSAPPNAME.Update"
-            ]
-        }
-    ],
     "role-collections":[
         {
-            "name": "UserManagementDemoRC",
-            "description": "User Manager Demoo Role Collection",
-            "role-template-references":[
-                "$XSAPPNAME.Viewer",
-                "$XSAPPNAME.Manager"
+            "name": "Hello",
+            "description": "TEST",
+             "roles":[
+                "Cloud Connector Administrator",
+                "Destination Administrator",
+                 "Subaccount Admin",
+                 "Subaccount Service Administrator"
             ]
         }
     ]
